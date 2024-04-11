@@ -33,8 +33,6 @@ function updateProgressBar() {
   progressBar.style.width = scrollPercentage + "%";
 }
 
-// Update the progress bar on page load
 updateProgressBar();
 
-// Update the progress bar whenever the user scrolls
 document.addEventListener("scroll", updateProgressBar);
