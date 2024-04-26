@@ -12,34 +12,19 @@ export default function App() {
 
   return (
     <div className="container">
+      <p>{code}</p>
       <div className="button-container">
-        <button
-          type="button"
-          onClick={(event) => {
-            handleClick(event);
-            console.log(handleClick(event));
-          }}
-        >
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Pufferfish">
             🐡
           </span>
         </button>
-        <button
-          type="button"
-          onClick={(event) => {
-            return `${handleClick()} ${event.target.textContent}`;
-          }}
-        >
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Whale">
             🐋
           </span>
         </button>
-        <button
-          type="button"
-          onClick={(event) => {
-            return `${handleClick()} ${event.target.textContent}`;
-          }}
-        >
+        <button type="button" onClick={handleClick}>
           <span role="img" aria-label="Clownfish">
             🐠
           </span>
@@ -49,7 +34,7 @@ export default function App() {
       <button
         type="button"
         onClick={() => {
-          console.log("Reset!");
+          setCode("");
         }}
       >
         Reset
