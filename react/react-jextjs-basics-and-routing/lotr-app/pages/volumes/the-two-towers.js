@@ -1,4 +1,5 @@
 import { volumes } from "../../resources/lib/data";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function theTwoTwoers() {
@@ -17,9 +18,16 @@ export default function theTwoTwoers() {
         {currentvolume.books[1].ordinal}
         <li>{currentvolume.books[1].title}</li>
       </ul>
-      <Link href="./the-fellowship-of-the-ring">Previous Volume</Link>
+      <Image
+        src="/images/the-two-towers.png"
+        height={230}
+        width={144}
+        alt="A picture of the cover"
+      />
       <br></br>
-      <Link href="./the-return-of-the-king">Next Volume</Link>
+      <Link href="/volumes/the-fellowship-of-the-ring">Previous Volume</Link>
+      <br></br>
+      <Link href="/volumes/the-return-of-the-king">Next Volume</Link>
     </div>
   );
 }

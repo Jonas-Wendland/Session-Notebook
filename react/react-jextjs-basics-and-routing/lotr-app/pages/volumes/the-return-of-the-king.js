@@ -1,5 +1,6 @@
 import { volumes } from "../../resources/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function theReturnOfTheKing() {
   const currentvolume = volumes.find(
@@ -19,7 +20,14 @@ export default function theReturnOfTheKing() {
         {currentvolume.books[1].ordinal}
         <li>{currentvolume.books[1].title}</li>
       </ul>
-      <Link href="./the-two-towers">Previous Volume</Link>
+      <Image
+        src="/images/the-return-of-the-king.png"
+        height={230}
+        width={144}
+        alt="A picture of the cover"
+      />
+      <br></br>
+      <Link href="/volumes/the-two-towers">Previous Volume</Link>
     </div>
   );
 }

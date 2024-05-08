@@ -21,13 +21,13 @@ export default function theFellowshipOfTheRing() {
         <li>{currentvolume.books[1].title}</li>
       </ul>
       <Image
-        src="../../resources/public/images/the-fellowship-of-the-ring.png"
-        height={144}
+        src="/images/the-fellowship-of-the-ring.png"
+        height={230}
         width={144}
         alt="A picture of the cover"
       />
       <br></br>
-      <Link href="./the-two-towers">Next Volume</Link>
+      <Link href="/volumes/the-two-towers">Next Volume</Link>
     </div>
   );
 }
