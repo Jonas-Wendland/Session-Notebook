@@ -21,11 +21,11 @@ export default function HomePage() {
   console.log(data);
 
   return (
-    <div>
+    <ul>
       <li> {data.character.firstName}</li>
       <li> {data.character.lastName}</li>
       <li> {data.character.twitterName}</li>
       <li> {data.character.geohash}</li>
-    </div>
+    </ul>
   );
 }
